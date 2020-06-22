@@ -46,13 +46,16 @@ test("property next works as expected", function test2() {
   expect(node.next).toBeUndefined();
 
   node.next = new SNode(11);
-  expect(node.next).toMatchObject({ value: 11, next: null });
+  expect(node.next).toMatchObject({
+    value: 11,
+    next: null,
+  });
 
-  expect((node.next = false)).toBe(false);
+  expect((node.next = false)).toBe(false); // TypeScript will complaint about this.
 });
 
 test("method toString works as expected.", function test3() {
-  const node = new SNode();
+  const node = new SNode(undefined);
   expect(node.toString()).toBe("undefined");
 
   node.value = null;
