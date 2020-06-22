@@ -1,0 +1,27 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "source": {
+    "include": ["src"],
+    "includePattern": ".ts$",
+    "expludePattern": "(node_modules/|docs)"
+  },
+  "plugins": ["node_modules/better-docs/typescript"],
+  "typescript": {
+    "moduleRoot": "test"
+  },
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true,
+    "better-docs": {
+      "name": "dsts"
+    }
+  },
+  "opts": {
+    "template": "node_modules/better-docs",
+    "destination": "docs",
+    "recurse": true
+  }
+}

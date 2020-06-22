@@ -1,0 +1,62 @@
+{
+  "name": "dsts",
+  "version": "0.0.0.1",
+  "description": "A data structures, ADTs, and algorithms library in TypeScript",
+  "main": "index.js",
+  "author": {
+    "email": "acagastya@outlook.com",
+    "name": "Agastya",
+    "url": "https://hanabi.in"
+  },
+  "maintainers": [
+    "acagastya"
+  ],
+  "license": "BSD-3-Clause",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/jest": "^26.0.0",
+    "babel-jest": "^26.0.1",
+    "better-docs": "^2.0.1",
+    "jest": "^26.0.1",
+    "jsdoc": "^3.6.4",
+    "prettier": "^2.0.5",
+    "serve": "^11.3.2",
+    "typescript": "^3.9.5"
+  },
+  "scripts": {
+    "babel-build": "babel --extensions '.ts' src --out-dir dist",
+    "build": "tsc",
+    "check-type": "tsc --noEmit --watch",
+    "clean": "rm -rf dist types dist docs",
+    "cov": "serve -d coverage/lcov-report",
+    "format": "prettier --write \"{src,tests}/**/*.{js,ts}\"",
+    "gen-doc": "jsdoc -c jsdoc.json",
+    "gen-type": "tsc --declaration --emitDeclarationOnly",
+    "preinstall": "tsc",
+    "show-doc": "serve docs",
+    "test": "jest --watch",
+    "test:cov": "jest --coverage --watch",
+    "tsc": "tsc"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "collectCoverageFrom": [
+      "./test/**/*"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "types": "types/index.d.ts"
+}
