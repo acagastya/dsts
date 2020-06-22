@@ -1,6 +1,6 @@
 {
   "name": "dsts",
-  "version": "0.0.0.1",
+  "version": "0.0.0.11",
   "description": "A data structures, ADTs, and algorithms library in TypeScript",
   "main": "index.js",
   "author": {
