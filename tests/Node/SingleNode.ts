@@ -5,8 +5,14 @@ test("SingleNode constructor works fine.", function test0() {
   expect(node.value).toBe(1);
   expect(node.next).toBeNull();
 
-  node = new SNode();
+  node = new SNode(); // TypeScript will complaint about this.
   expect(node.value).toBeUndefined();
+
+  node = new SNode("foo", undefined);
+  expect(node.next).toBeUndefined();
+
+  node = new SNode("bar", "baz"); // TypeScript will complaint about this.
+  expect(node.next).toBe("baz");
 });
 
 test("property value can hold different types of data.", function test1() {
