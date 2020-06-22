@@ -11,7 +11,7 @@ Consider you would like to use the `Stack` and `Queue` data structure.
 ```ts
 import { ds } from "dsts";
 // or
-const { ds } = require("dsts");
+const { ds } = require("dsts").default;
 
 const { Stack, Queue } = ds;
 ```

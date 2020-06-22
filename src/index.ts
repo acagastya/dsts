@@ -1,7 +1,11 @@
-import SNode from "ds/Node/SingleNode";
+import SingleNode from "./ds/Node/SingleNode";
 
 const ds = {
-  SNode,
+  SingleNode,
 };
 
-export default { ds };
+const dsts = {
+  ds,
+};
+
+export default dsts;
