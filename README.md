@@ -53,7 +53,9 @@ src
 + `value` &mdash; (required).  type: `any`.  The value to be saved in the Node.
 + `next` &mdash; (optional).  type: `NodeType`.  Reference to the next node.  (default) `null`.
 
-**methods**
-+ `toString` &mdash; returns `string`.  Returns string representation of the node `value`.
-
 ### Extended Data Structures
+
+#### SingleNode
+
+**methods**
++ `toString` &mdash; returns `string`.  Returns string representation of the node's `value`.

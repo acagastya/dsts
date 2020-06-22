@@ -1,4 +1,5 @@
 import SNode from "../../src/ds/Node/SingleNode";
+import ExtendedSNode from "../../src/extended/Node/SingleNode";
 
 test("SingleNode constructor works fine.", function test0() {
   let node = new SNode(1);
@@ -55,7 +56,7 @@ test("property next works as expected", function test2() {
 });
 
 test("method toString works as expected.", function test3() {
-  const node = new SNode(undefined);
+  const node = new ExtendedSNode(undefined);
   expect(node.toString()).toBe("undefined");
 
   node.value = null;
@@ -73,6 +74,6 @@ test("method toString works as expected.", function test3() {
   node.value = [1, 3, 99];
   expect(node.toString()).toBe("1,3,99");
 
-  node.value = new SNode("foo");
+  node.value = new ExtendedSNode("foo");
   expect(node.toString()).toBe("foo");
 });

@@ -29,16 +29,6 @@ class SingleNode implements INode {
     this.value = data;
     this.next = arguments.length > 1 ? next : null;
   }
-
-  /**
-   * @access public
-   * @returns string
-   * @param void
-   * @description returns the string conversion of the value of the node.
-   */
-  public toString(): string {
-    return "" + this.value;
-  }
 }
 
 export default SingleNode;
