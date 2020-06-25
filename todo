@@ -1,3 +1,3 @@
-+ [ ] Implement List interface.
-+ [ ] Implement SinglyLinkedList class.
++ [x] Implement List interface.
++ [x] Implement SinglyLinkedList class.
 + [ ] Test the working of SinglyLinkedList.

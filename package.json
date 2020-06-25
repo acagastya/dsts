@@ -31,7 +31,7 @@
     "babel-build": "babel --extensions '.ts' src --out-dir dist",
     "build": "tsc",
     "check-type": "tsc --noEmit --watch",
-    "clean": "rm -rf dist types dist docs",
+    "clean": "rm -rf dist types docs",
     "cov": "serve -d coverage/lcov-report",
     "format": "prettier --write \"{src,tests}/**/*.{js,ts}\"",
     "gen-doc": "jsdoc -c jsdoc.json",
