@@ -9,9 +9,9 @@
 Consider you would like to use the `Stack` and `Queue` data structure.
 
 ```ts
-import { ds } from "dsts";
+import { ds } from "@acagastya/dsts";
 // or
-const { ds } = require("dsts").default;
+const { ds } = require("@acagastya/dsts").default;
 
 const { Stack, Queue } = ds;
 ```

@@ -1,6 +1,6 @@
 {
-  "name": "dsts",
-  "version": "0.0.0.11",
+  "name": "@acagastya/dsts",
+  "version": "0.0.1",
   "description": "A data structures, ADTs, and algorithms library in TypeScript",
   "main": "dist/index.js",
   "author": {
